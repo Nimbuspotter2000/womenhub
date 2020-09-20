@@ -14,6 +14,7 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="/public/stylesheets/navbar.css">
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/public/images/logo.jpeg">
 
   <style>
     .bd-placeholder-img {
@@ -60,15 +61,14 @@
       <li><a href="/opportunities">Opportunities</a></li>
       <li><a href="/contests" class="disabled">Contests</a></li>
       <!-- <% if(isloggedin=="login/register") { %> -->
-      <li><a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal"
-          data-target="#modalLRForm">LogIn/Register</a></li>
+      <li><a href="/login" class="btn btn-default btn-rounded my-3">LogIn/Register</a></li>
       <!-- <%} else {%> -->
       <li class="nav-item dropdown no-arrow">
 
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-            profile</span>
+            Profile</span>
 
           <!-- <img class="img-profile rounded-circle" src="/public/Images/default_profile.png"> -->
 
@@ -78,7 +78,7 @@
           <a class="dropdown-item" href="/users/dashboard">
 
             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            dashboard
+            Dashboard
           </a>
 
 
@@ -104,16 +104,16 @@
   <script type="text/javascript" src="/public/stylesheets/navbar.js"></script>
 
   <!--Modal: Login / Register Form-->
-  <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  <!-- <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog cascading-modal" role="document">
-      <!--Content-->
+      
       <div class="modal-content">
 
-        <!--Modal cascading tabs-->
+       
         <div class="modal-c-tabs">
 
-          <!-- Nav tabs -->
+          
 
           <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
             <li class="nav-item">
@@ -124,12 +124,11 @@
             </li>
           </ul>
 
-          <!-- Tab panels -->
+          
           <div class="tab-content">
-            <!--Panel 7-->
+            
             <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
-              <!--Body-->
               <div class="modal-body mb-1">
                 <form action="/login" method="post">
                   <div class="mb-3">
@@ -143,7 +142,7 @@
                   <button type="submit" class="btn btn-primary">SIGN IN</button>
                 </form>
               </div>
-              <!--Footer-->
+              
               <div class="modal-footer">
                 <div class="options text-center text-md-right mt-1">
                   <p><a href="#" class="blue-text">Forgot Password?</a></p>
@@ -153,12 +152,11 @@
               </div>
 
             </div>
-            <!--/.Panel 7-->
+            
 
-            <!--Panel 8-->
+            
             <div class="tab-pane fade" id="panel8" role="tabpanel">
 
-              <!--Body-->
               <div class="modal-body">
                 <form action="/register" method="POST" onsubmit="checkregform(this)">
                   <div class="mb-3">
@@ -190,14 +188,14 @@
                 </form>
               </div>
             </div>
-            <!--/.Panel 8-->
+            
           </div>
 
         </div>
       </div>
-      <!--/.Content-->
+     
     </div>
-  </div>
+  </div> -->
   <!--Modal: Login / Register Form-->
   <script type="text/javascript">
     function checkusername() {
